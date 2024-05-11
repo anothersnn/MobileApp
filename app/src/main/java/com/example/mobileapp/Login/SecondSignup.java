@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.mobileapp.R;
 
-public class Signup2 extends AppCompatActivity {
+public class SecondSignup extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,8 +20,12 @@ public class Signup2 extends AppCompatActivity {
         loginText.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Signup2.this, Login.class));
+                startActivity(new Intent(SecondSignup.this, Login.class));
             }
         });
+    }
+
+    public void onBackButtonClicked(View view) {
+        onBackPressed();
     }
 }

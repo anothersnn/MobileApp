@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".Activity">
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/topAppBarLogin"
@@ -12,14 +12,13 @@
         android:layout_height="148dp"
         android:background="#410FA3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
     </com.google.android.material.appbar.MaterialToolbar>
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageAvatar"
         android:layout_width="54dp"
         android:layout_height="54dp"
         android:layout_marginStart="24dp"
@@ -36,15 +35,15 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginStart="24dp"
-        android:fontFamily="@font/fredoka_condensed_bold"
 
-        android:text="Hello, User"
+        android:layout_marginTop="80dp"
+        android:fontFamily="@font/fredoka_condensed_bold"
+        android:text="@string/hello_user"
         android:textColor="@color/white"
+
         android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.016" />
+        app:layout_constraintTop_toTopOf="@+id/topAppBarLogin" />
 
     <TextView
         android:id="@+id/textView12"
@@ -54,7 +53,7 @@
         android:layout_marginStart="24dp"
 
         android:fontFamily="@font/fredoka_condensed_bold"
-        android:text="Top users"
+        android:text="@string/top_users"
         android:textColor="@color/black"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -71,7 +70,7 @@
         android:layout_marginTop="189dp"
 
         android:fontFamily="@font/fredoka_condensed_bold"
-        android:text="Available exercise"
+        android:text="@string/available_exercise"
         android:textColor="@color/black"
         android:textSize="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -85,15 +84,14 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginStart="24dp"
-        android:fontFamily="@font/fredoka_condensed_bold"
-        android:text="Are you ready for learning today?"
+        android:layout_marginTop="36dp"
 
+        android:fontFamily="@font/fredoka_condensed_bold"
+        android:text="@string/are_you_ready_for_learning_today"
         android:textColor="#B6B6B6"
         android:textSize="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:layout_constraintVertical_bias="0.049" />
+        app:layout_constraintTop_toBottomOf="@+id/imageAvatar" />
 
     <Button
         android:id="@+id/button2"
@@ -140,7 +138,7 @@
         app:layout_constraintVertical_bias="0.727" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/buttonListening"
         android:layout_width="153dp"
         android:layout_height="117dp"
         android:layout_marginStart="24dp"

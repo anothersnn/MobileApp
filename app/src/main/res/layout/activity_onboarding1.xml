@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Onboarding.Onboarding1">
+    tools:context=".Onboarding.FirstOnboarding">
 
     <ImageView
         android:id="@+id/ivOnboardingIcon"
@@ -19,12 +19,9 @@
     <Button
         android:id="@+id/button"
         style="@style/selectBlueButton"
-        android:layout_width="340dp"
-        android:layout_height="46dp"
         android:fontFamily="@font/fredoka_semibold"
         android:text="@string/onboarding_1_next_button"
         android:letterSpacing="0.01"
-        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,6 +29,7 @@
         app:layout_constraintVertical_bias="0.85" />
 
     <TextView
+        style="@style/bodyMedium"
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -49,7 +47,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/fredoka_semibold"
-        android:text="Confidence in your words"
+        android:text="@string/confidence_in_your_words"
         android:textSize="20sp"
         android:textColor="@color/black"
         android:letterSpacing="0.01"
@@ -63,9 +61,9 @@
         android:id="@+id/textView21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="With conversation-based learning,\n you'll be talking from lesson one"
+        android:text="@string/with_conversation_based_learning_n_you_ll_be_talking_from_lesson_one"
         android:fontFamily="@font/fredoka_regular"
-        android:layout_marginTop="505dp"
+        android:layout_marginTop="510dp"
         android:textAlignment="center"
         android:letterSpacing="0.01"
         app:layout_constraintEnd_toEndOf="parent"

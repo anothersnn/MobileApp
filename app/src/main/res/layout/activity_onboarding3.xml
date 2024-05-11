@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Onboarding.Onboarding3">
+    tools:context=".Onboarding.ThirdOnboarding">
 
     <ImageView
         android:id="@+id/ivOnboardingIcon2"
@@ -19,12 +19,8 @@
     <Button
         android:id="@+id/button"
         style="@style/selectBlueButton"
-        android:layout_width="340dp"
-        android:layout_height="46dp"
         android:fontFamily="@font/fredoka_semibold"
         android:text="@string/onboarding_1_next_button"
-        android:letterSpacing="0.01"
-        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -34,9 +30,9 @@
         android:id="@+id/textView21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Using a variety of learning styles to learn\n and retain"
+        android:text="@string/using_a_variety_of_learning_styles_to_learn_n_and_retain"
         android:fontFamily="@font/fredoka_regular"
-        android:layout_marginTop="505dp"
+        android:layout_marginTop="510dp"
         android:letterSpacing="0.01"
         app:layout_constraintEnd_toEndOf="parent"
         android:textAlignment="center"
@@ -48,7 +44,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/fredoka_semibold"
-        android:text="The lessons you need to learn"
+        android:text="@string/the_lessons_you_need_to_learn"
         android:textSize="20sp"
         android:textColor="@color/black"
         android:letterSpacing="0.01"
@@ -59,6 +55,7 @@
         />
 
     <TextView
+        style="@style/bodyMedium"
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

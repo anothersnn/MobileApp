@@ -1,4 +1,4 @@
-package com.example.mobileapp.GuessGame;
+package com.example.mobileapp.Games;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -28,5 +28,9 @@ public class GuessTheAnimal extends AppCompatActivity {
                     startActivity(new Intent(GuessTheAnimal.this, GuessError.class));
             }
         });
+    }
+
+    public void onBackButtonClicked(View view) {
+        onBackPressed();
     }
 }

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Onboarding.Onboarding2">
+    tools:context=".Onboarding.SecondOnboarding">
 
     <ImageView
         android:id="@+id/ivOnboardingIcon2"
@@ -20,12 +20,8 @@
     <Button
         android:id="@+id/button"
         style="@style/selectBlueButton"
-        android:layout_width="340dp"
-        android:layout_height="46dp"
         android:fontFamily="@font/fredoka_semibold"
         android:text="@string/onboarding_1_next_button"
-        android:letterSpacing="0.01"
-        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,12 +32,13 @@
         android:id="@+id/textView21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Develop a habit of learning and,\n make it a part of your daily routine"
+        android:text="@string/develop_a_habit_of_learning_and_n_make_it_a_part_of_your_daily_routine"
         android:fontFamily="@font/fredoka_regular"
-        android:layout_marginTop="505dp"
+        android:layout_marginTop="510dp"
         android:letterSpacing="0.01"
         app:layout_constraintEnd_toEndOf="parent"
         android:textAlignment="center"
+        app:flow_horizontalAlign="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -50,17 +47,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/fredoka_semibold"
-        android:text="Take your time to learn"
+        android:text="@string/take_your_time_to_learn"
         android:textSize="20sp"
         android:textColor="@color/black"
         android:letterSpacing="0.01"
         android:layout_marginTop="480dp"
+        app:flow_horizontalAlign="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         />
 
     <TextView
+        style="@style/bodyMedium"
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -4,44 +4,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GuessGame.GuessTheAnimal">
+    tools:context=".Games.GuessTheAnimal">
 
     <Button
+        style="@style/selectBlueButton"
         android:id="@+id/buttonGuess"
-        android:layout_width="329dp"
-        android:layout_height="49dp"
         android:layout_marginTop="10dp"
         android:background="@drawable/button_rounded_blue"
-        android:fontFamily="@font/fredoka_condensed_bold"
-        android:text="Check"
+        android:fontFamily="@font/fredoka_semibold"
+        android:text="@string/check"
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextGuess" />
 
     <EditText
+        style="@style/grayButton"
         android:id="@+id/editTextGuess"
         android:background="@drawable/rounded_rectangle_gray"
-        android:layout_width="334dp"
+        android:layout_width="350dp"
         android:layout_height="50dp"
         android:layout_marginTop="36dp"
+        android:paddingStart="15dp"
         android:ems="10"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <TextView
+        style="@style/bodyMedium"
         android:id="@+id/textView14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="54dp"
-        android:text="Write who is on image"
+        android:layout_marginBottom="57dp"
+        android:text="@string/write_who_is_on_image"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="@+id/editTextGuess"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintHorizontal_bias="0.114"
         app:layout_constraintStart_toStartOf="parent" />
 
     <com.google.android.material.appbar.MaterialToolbar
@@ -87,9 +89,9 @@
         android:id="@+id/imageView3"
         android:layout_width="335dp"
         android:layout_height="364dp"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="70dp"
         android:background="@drawable/racoon"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></ImageView>
+        app:layout_constraintTop_toTopOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

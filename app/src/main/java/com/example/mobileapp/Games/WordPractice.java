@@ -1,6 +1,7 @@
-package com.example.mobileapp.PracticeGame;
+package com.example.mobileapp.Games;
 
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,5 +13,9 @@ public class WordPractice extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_word_practice);
+    }
+
+    public void onBackButtonClicked(View view) {
+        onBackPressed();
     }
 }

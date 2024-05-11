@@ -13,22 +13,28 @@
         android:theme="@style/Theme.Language_app"
         tools:targetApi="31">
         <activity
-            android:name=".PracticeGame.WordPractice"
+            android:name=".Profile"
             android:exported="false" />
         <activity
-            android:name=".GuessGame.GuessError"
+            android:name=".Audition"
             android:exported="false" />
         <activity
-            android:name=".GuessGame.GuessSuccess"
+            android:name=".Games.WordPractice"
             android:exported="false" />
         <activity
-            android:name=".GuessGame.GuessTheAnimal"
+            android:name=".Games.GuessError"
             android:exported="false" />
         <activity
-            android:name=".Login.Signup2"
+            android:name=".Games.GuessSuccess"
             android:exported="false" />
         <activity
-            android:name=".Login.Signup1"
+            android:name=".Games.GuessTheAnimal"
+            android:exported="false" />
+        <activity
+            android:name=".Login.SecondSignup"
+            android:exported="false" />
+        <activity
+            android:name=".Login.FirstSignup"
             android:exported="false" />
         <activity
             android:name=".Login.Login"
@@ -37,16 +43,16 @@
             android:name=".Onboarding.LanguageSelect"
             android:exported="false" />
         <activity
-            android:name=".Onboarding.Onboarding3"
+            android:name=".Onboarding.ThirdOnboarding"
             android:exported="false" />
         <activity
-            android:name=".Onboarding.Onboarding2"
+            android:name=".Onboarding.SecondOnboarding"
             android:exported="false" />
         <activity
-            android:name=".Onboarding.Onboarding1"
+            android:name=".Onboarding.FirstOnboarding"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Activity"
             android:exported="false" />
         <activity
             android:name=".SplashScreen"

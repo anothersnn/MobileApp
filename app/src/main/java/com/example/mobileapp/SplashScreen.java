@@ -6,7 +6,7 @@ import android.os.Handler;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.mobileapp.Onboarding.Onboarding1;
+import com.example.mobileapp.Onboarding.FirstOnboarding;
 
 public class SplashScreen extends AppCompatActivity {
 
@@ -17,10 +17,10 @@ public class SplashScreen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(SplashScreen.this, Onboarding1.class);
+                Intent intent = new Intent(SplashScreen.this, FirstOnboarding.class);
                 startActivity(intent);
                 finish();
             }
-        }, 3000);
+        }, 1000);
     }
 }

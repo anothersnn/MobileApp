@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.mobileapp.MainActivity;
+import com.example.mobileapp.Activity;
 import com.example.mobileapp.R;
 
 public class Login extends AppCompatActivity {
@@ -22,7 +22,7 @@ public class Login extends AppCompatActivity {
         signupButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Login.this, Signup1.class));
+                startActivity(new Intent(Login.this, FirstSignup.class));
             }
         });
 
@@ -30,7 +30,7 @@ public class Login extends AppCompatActivity {
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Login.this, MainActivity.class));
+                startActivity(new Intent(Login.this, Activity.class));
             }
         });
     }

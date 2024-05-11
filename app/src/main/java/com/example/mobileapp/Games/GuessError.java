@@ -1,4 +1,4 @@
-package com.example.mobileapp.GuessGame;
+package com.example.mobileapp.Games;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,7 +7,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.mobileapp.MainActivity;
+import com.example.mobileapp.Activity;
 import com.example.mobileapp.R;
 
 public class GuessError extends AppCompatActivity {
@@ -23,7 +23,7 @@ public class GuessError extends AppCompatActivity {
         nextButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(GuessError.this, MainActivity.class));
+                startActivity(new Intent(GuessError.this, Activity.class));
             }
         });
 
@@ -33,5 +33,9 @@ public class GuessError extends AppCompatActivity {
                 startActivity(new Intent(GuessError.this, GuessTheAnimal.class));
             }
         });
+    }
+
+    public void onBackButtonClicked(View view) {
+        onBackPressed();
     }
 }

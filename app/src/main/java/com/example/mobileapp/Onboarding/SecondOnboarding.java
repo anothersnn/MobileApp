@@ -8,21 +8,21 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.mobileapp.MainActivity;
+import com.example.mobileapp.Activity;
 import com.example.mobileapp.R;
 
-public class Onboarding1 extends AppCompatActivity {
+public class SecondOnboarding extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_onboarding1);
+        setContentView(R.layout.activity_onboarding2);
 
         TextView textView = findViewById(R.id.textView);
         textView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Onboarding1.this, MainActivity.class));
+                startActivity(new Intent(SecondOnboarding.this, Activity.class));
             }
         });
 
@@ -30,7 +30,7 @@ public class Onboarding1 extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(Onboarding1.this, Onboarding2.class));
+                startActivity(new Intent(SecondOnboarding.this, ThirdOnboarding.class));
             }
         });
     }

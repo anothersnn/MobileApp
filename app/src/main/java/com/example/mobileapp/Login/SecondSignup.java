@@ -14,7 +14,7 @@ public class SecondSignup extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_signup2);
+        setContentView(R.layout.activity_signup_2);
 
         TextView loginText = findViewById(R.id.textViewLogin);
         loginText.setOnClickListener(new View.OnClickListener() {

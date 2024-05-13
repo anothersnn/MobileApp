@@ -7,53 +7,57 @@
     tools:context=".Profile">
 
     <Button
-        style="@style/selectBlueButton"
-        android:id="@+id/changeLangButton"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/button_rounded_blue"
-        android:fontFamily="@font/fredoka_condensed_bold"
-        android:text="@string/change_mother_language"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/choose_button3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        style="@style/selectBlueButton"
-        android:id="@+id/choose_button3"
-        android:layout_marginBottom="8dp"
-        android:background="@drawable/button_rounded_blue"
-        android:fontFamily="@font/fredoka_condensed_bold"
-        android:text="@string/change_your_image"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/choose_button5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        style="@style/selectBlueButton"
         android:id="@+id/choose_button4"
-        android:layout_marginBottom="8dp"
+        style="@style/selectBlueButton"
+        android:layout_marginBottom="20dp"
         android:text="@string/switch_to_dark"
         app:layout_constraintBottom_toTopOf="@+id/changeLangButton"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/choose_button5"
         android:layout_width="350dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="28dp"
+        android:layout_marginBottom="40dp"
         android:background="@drawable/button_rounded_gray"
         android:fontFamily="@font/fredoka_semibold"
+        android:letterSpacing="0.01"
         android:text="@string/logout"
+        android:textAllCaps="false"
         android:textColor="@color/white"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:letterSpacing="0.01"
-        android:textAllCaps="false"
-        android:textSize="20sp"/>
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/choose_button3"
+        style="@style/selectBlueButton"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_rounded_blue"
+        android:fontFamily="@font/fredoka_condensed_bold"
+        android:text="@string/change_your_image"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/choose_button5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/changeLangButton"
+        style="@style/selectBlueButton"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_rounded_blue"
+        android:fontFamily="@font/fredoka_condensed_bold"
+        android:text="@string/change_mother_language"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/choose_button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <com.google.android.material.appbar.MaterialToolbar
         android:id="@+id/topAppBarLogin"

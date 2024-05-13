@@ -15,7 +15,7 @@ public class FirstSignup extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_signup1);
+        setContentView(R.layout.activity_signup_1);
 
         TextView loginText = findViewById(R.id.textViewLogin);
         loginText.setOnClickListener(new View.OnClickListener() {
